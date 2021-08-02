@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+:root{
+    --primaryColor : #FF8300;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+}
+/*---------Header-------------*/
+#header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logo {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+#header .logo i{
+    font-size: 32px;
+    color: var(--primaryColor);
+}
+#header .logo h1 {
+    position: relative;
+    top:-1;
+    margin-left: 7px;
+}
+#header nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header nav ul {
+    display: flex;
+}
+#header nav ul li {
+    display: block;
+    padding: 40px 10px;
+    font-size: 14px;
+}
+#header nav ul li:hover{
+    border-width:0 0 2px 0;
+    border-style: solid;
+    border-color: var(--primaryColor);
+}
+/*-------------Section1-------------*/
+#section1{
+    width: 100%;
+    height: 721px;
+    background-image: url(pexels-binyamin-mellish-17840.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#section1 h1 {
+    font-size: 70px;
+    padding-bottom: 25px;
+}
+#section1 p {
+    padding-bottom: 25px;
+}
+#section1 .b1 {
+    width: 170px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+#section1 .b2 {
+    width: 170px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+/*------------Section2( Our Courses )-----------*/
+#section2{
+    width: 100%;
+    height: 821px;
+    padding-top: 50px;
+}
+.title{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 50px;
+    font-size: 40px;
+    width: 400px;
+    padding-top: 20px;
+    position: relative;
+    left: 37%;
+    padding-bottom: 25px;
+    border-width: 5px 0 0 0;
+    border-style: solid;
+    border-color: var(--primaryColor);
+}
+.sub{
+    text-align: center;
+    opacity: 0.5;
+}
+.courses{
+    width: 100%;
+    height: calc(721px*0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.courses .c1 img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+} 
+.courses .c1{
+    margin-right: 20px;
+}
+.courses .c1 h2 {
+    padding: 20px 0 20px 0;
+    font-size: 32px;
+}
+.courses .c1 p {
+    line-height: 25px;
+    opacity: 0.5;
+}
+/*-----------Section3( Expirence )--------------*/
+#section3{
+    width: 100%;
+    height: 721px;
+    margin-top: -30px;
+}
+#section3 h1 {
+    font-size: 70px;
+    position: relative;
+    top: 130px;
+    padding-left: 430px;
+    font-style: italic;
+    
+}
+#section3 h1 span {
+    color: white;
+}
+#section3 img {
+    width: 50%;
+    height: 95%;
+    border-radius: 0 0 30% 0;
+}
+.experience{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    right: -750px;
+    bottom: 350px;
+    padding-left: 50px;
+}
+.experience h2 {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.experience p {
+    line-height: 25px;
+    opacity: 0.5;
+    padding-bottom: 25px;
+}
+.experience button {
+    width: 170px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+/*------------Section4( Conter )--------------*/
+#section4{
+    width: 100%;
+    height: 280px;
+    background-image: url(cont.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-blend-mode: soft-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.p1{
+    padding-left: 16px;
+}
+.p2{
+    padding-left: 46px;
+}
+.s1 i {
+    font-size: 80px;
+}
+.s1 h1 {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    text-align: center;
+}
+/*-------------Section5( Our Team )-----------------*/
+#section5{
+    width: 100%;
+    height: 650px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 50px;
+}
+.t1{
+    padding-right: 25px;
+}
+.t1 img {
+    width: 250px;
+    height: 300px;
+}
+.t1 h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.t1 p {
+    text-align: center;
+}
+.t1 .social {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2.5px solid var(--primaryColor);
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    left: 35px;
+    bottom: 50px;
+    visibility: hidden;
+}
+.t1 .social i {
+    color: grey;
+    font-size: 22px;
+}
+.t1 h1 :hover  .social {
+    visibility: visible;
+}
+/*---------Section6( Class Schedules )--------------*/
+#section6{
+    width: 100%;
+    height: 751px;
+    background-color: grey;
+    padding-top: 25px;
+    color: white;
+    background-image: url(clas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.classes{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 49% 49%;
+    grid-template-areas: " c1 c2 c3 c4 " " c5 c6 c7 c8 ";
+    justify-content: center;
+    align-items: center;
+    gap: 0px 0px;
+    padding-bottom: 71px;
+}
+.cla1,.cla2,.cla3,.cla4,.cla5,.cla6,.cla7,.cla8 {
+    grid-area: c1;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    padding: 15px 0px 15px 15px;
+    margin-right: 10px;
+}
+.cla1:hover,.cla2:hover,.cla3:hover,.cla4:hover,.cla5:hover,.cla6:hover,.cla7:hover,.cla8:hover{
+    background-color: white;
+    color: black;
+}
+.cla1 h1,.cla2 h1,.cla3 h1,.cla4 h1,.cla5 h1,.cla6 h1,.cla7 h1,.cla8 h1 {
+    color: var(--primaryColor);
+    opacity: 0.4;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+.cla1 h4,.cla2 h4,.cla3 h4,.cla4 h4,.cla5 h4,.cla6 h4,.cla7 h4,.cla8 h4 {
+    font-weight: 300;
+    padding: 0 0 20px 0;
+}
+.cla1 h2,.cla2 h2,.cla3 h2,.cla4 h2,.cla5 h2,.cla6 h2,.cla7 h2,.cla8 h2 {
+    padding-bottom: 10px;
+}
+.cla2{
+    grid-area: c2;
+    border: 1.5px solid white;
+}
+.cla3{
+    grid-area: c3;
+}
+.cla4{
+    grid-area: c4;
+}
+.cla5{
+    grid-area: c5;
+    border: 1.5px solid white;
+}
+.cla6{
+    grid-area: c6;
+}
+.cla7{
+    grid-area: c7;
+}
+.cla8{
+    grid-area: c8;
+}
+/*-------------Section7( Pricing Plans )-------------*/
+#section7{
+    width: 100%;
+    height: 780px;
+    margin-top: 50px;
+    padding-top: 60px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basic{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    margin-right: 15px;
+    margin-top: 25px;
+    box-shadow: 3px 3px 2px 2px #989898 ;
+    border-radius: 5px;
+}
+.basic h1 {
+    padding: 25px;
+    font-weight: 500;
+}
+.basic h2 {
+    font-weight: 500;
+    padding: 0 20px 20px 20px;
+}
+.basic h2 span {
+    color: var(--primaryColor);
+    font-size: 35px;
+    font-weight: 900;
+}
+.basic p {
+    padding: 20px 20px 20px 20px;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.basic button {
+    width: 170px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    border-radius: 0 20% 20% 0;
+}
+/*------------Section8( Trainee )-------------*/
+#section8{
+    width: 100%;
+    height: 621px;
+    background-image: url(trai2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#section8 img {
+    width: 150px;
+    height: 220px;
+    padding-bottom: 20px;
+    border-radius: 7px;
+}
+#section8 h1 {
+    padding: 10px 0 10px 0;
+    font-size: 25px;
+}
+#section8 h3 {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+#section8 p {
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 35px;
+}
+#section8 i:first-child{
+    background-color: white;
+    border-radius: 50%;
+}
+/*--------------Section9( Contact )------------------*/
+#section9{
+    width: 100%;
+    height: 730px;
+    display: flex;
+    
+}
+.contact{
+    width: 50%;
+    padding-left: 100px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.contact form input {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.contact form textarea {
+    padding: 15px 10px 0 15px;
+}
+.contact h1 {
+    text-align: start;
+    font-weight: bolder;
+    margin-top: 50px;
+    font-size: 40px;
+    width: 400px;
+    position: relative;
+    left: 25px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-width: 5px 0 0 0;
+    border-style: solid;
+    border-color: var(--primaryColor);;
+}
+.contact button {
+    width: 170px;
+    height: 50px;
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+#section9 iframe {
+    width: 50%;
+    height: 730px;
+}
+/*--------------Footer------------------*/
+#footer{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    color: white;
+}
+#footer .copy {
+    text-align: center;
+    padding-top: 30px;
+
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 165px;
+    padding-bottom: 100px;
+}
+.pab{
+    padding-bottom: 35px;;
+}
+.foot .f1 {
+    margin-right: 175px;
+}
+.foot .f1 h2 {
+    padding-bottom: 25px;
+}
+.foot .f1 p {
+    line-height: 35px;
+}
+.foot .social2 h2 {
+    position: relative;
+    top: -57px;
+}
+.foot .social2 i {
+    font-size: 30px;
+    padding: 10px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    top: -30px;
+}
+
